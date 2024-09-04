@@ -1,8 +1,14 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable tailwindcss/no-custom-classname */
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
+import Lottie from "react-lottie";
+import { useState } from "react";
+import animationData from "@/data/confetti.json";
+import MagicButton from "./MagicButton";
+import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
   className,
@@ -42,6 +48,18 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText('gabriel.br1994@gmail.com');
+    setCopied(true);
+    const timer = setTimeout(() => {
+      setCopied(false);
+    }, 5000);
+  }
+  
+
+
   return (
     <div
       className={cn(
@@ -54,13 +72,13 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      <div className={`${id === 6} && "flex h-full justify-center`}>
+      <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="absolute size-full">
           {img && (
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover, object-center")}
+              className={cn(imgClassName, "object-cover object-center")}
             />
           )}
         </div>
@@ -79,7 +97,6 @@ export const BentoGridItem = ({
         </div>
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 flex items-center justify-center font-bold text-white" />
           </BackgroundGradientAnimation>
         )}
         <div
@@ -99,32 +116,51 @@ export const BentoGridItem = ({
           {id === 3 && (
             <div className="absolute -right-3 flex w-fit gap-1 lg:-right-2 lg:gap-5">
               <div className="flex flex-col gap-3 lg:gap-8">
-                {["React.js", "Next.js", "Typescript"].map(
-                  (item) => (
-                    <span
-                      key={item}
-                      className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
-                    >
-                      {item}
-                    </span>
-                  )
-                )}
-                <span className="rounded-lg bg-[#10132e] px-3 py-4 text-center"/>
+                {["React.js", "Next.js", "Typescript"].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="rounded-lg bg-[#10132e] px-3 py-4 text-center" />
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
-              <span className="rounded-lg bg-[#10132e] px-3 py-4 text-center"/>
-                {["Tailwind", "Vite", "GSAP"].map(
-                  (item) => (
-                    <span
-                      key={item}
-                      className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
-                    >
-                      {item}
-                    </span>
-                  )
-                )}
-                
+                <span className="rounded-lg bg-[#10132e] px-3 py-4 text-center" />
+                {["Tailwind", "Vite", "GSAP"].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
+            </div>
+          )}
+          {id === 6 && (
+            <div className="relative mt-5">
+              <div className={`absolute -bottom-5 right-0`}>
+                <Lottie
+                  options={{
+                    loop: copied,
+                    autoplay: copied,
+                    animationData,
+                    rendererSettings: {
+                      preserveAspectRatio: "xMidYmid slice",
+                    },
+                  }}
+                />
+              </div>
+              <MagicButton 
+              title={copied ? 'Email copiado!' : 'Copie meu email'}
+              icon={<IoCopyOutline />}
+              position="left"
+              otherClasses="bg-[#161a31]"
+              handleClick={handleCopy}
+
+              />
             </div>
           )}
         </div>
