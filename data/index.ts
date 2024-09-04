@@ -1,14 +1,16 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "Início", link: "#hero" },
+  { name: "Sobre", link: "#about" },
+  { name: "Projetos", link: "#projects" },
+  // { name: "Testimonials", link: "#testimonials" },
+  { name: "Contato", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "Priorizo ​​a colaboração do cliente, promovendo a comunicação aberta",
+    title:
+      "Priorizo a colaboração do cliente, promovendo a comunicação aberta",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "size-full",
@@ -69,9 +71,6 @@ export const gridItems = [
   },
 ];
 
-
-
-
 export const companies = [
   {
     id: 1,
@@ -105,7 +104,6 @@ export const companies = [
   },
 ];
 
-
 export const socialMedia = [
   {
     id: 1,
@@ -125,34 +123,59 @@ export const projects = [
   {
     id: 1,
     title: "OrçaFácil - Gerenciamento de Projetos",
-    description: "Permite a criação, edição e exclusão de projetos. O mesmo conta com um orçamento, ao qual podem ser associados custos de serviços.",
+    description:
+      "Permite a criação, edição e exclusão de projetos. O mesmo conta com um orçamento, ao qual podem ser associados custos de serviços.",
     img: "/orcafacil_thumb.jpg",
-    iconList: ["/re.svg", "/render_logo.svg", "/tail.svg", "/vercel_logo.svg", "/vite_logo.svg" ],
+    iconList: [
+      { id: 1, name: "React.JS", image: "/re.svg" },
+      { id: 2, name: "Render", image: "/render_logo.svg" },
+      { id: 3, name: "TailwindCSS", image: "/tail.svg" },
+      { id: 4, name: "Vercel", image: "/vercel_logo.svg" },
+      { id: 5, name: "Vite", image: "/vite_logo.svg" },
+    ],
     link: "https://orcafacil.vercel.app",
   },
   {
     id: 2,
     title: "Simpósio de Saúde - Landing page ",
-    description: "Em parceria com a Secretaria de Informação e Saúde Digital do Ministério da Saúde (SEIDIGI/MS) realizei a criação do site para o 1º Simpósio Internacional Transformação Digital no SUS.",
+    description:
+      "Em parceria com a Secretaria de Informação e Saúde Digital do Ministério da Saúde (SEIDIGI/MS) realizei a criação do site para o 1º Simpósio Internacional Transformação Digital no SUS.",
     img: "/simposio_thumb.jpg",
-    iconList: ["/js_logo.svg", "/vercel_logo.svg", "/vite_logo.svg"],
+    iconList: [
+      { id: 1, name: "JavaScript", image: "/js_logo.svg" },
+      { id: 2, name: "Vercel", image: "/vercel_logo.svg" },
+      { id: 3, name: "Vite", image: "/vite_logo.svg" },
+    ],
     link: "https://i-simposio-transformacao-digital-no-sus.vercel.app",
   },
-  {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    description: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconList: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    description: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconList: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
-  },
-];
+  // {
+  //   id: 3,
+  //   title: "AI Image SaaS - Canva Application",
+  //   description:
+  //     "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+  //   img: "/p3.svg",
+  //   iconList: [
+  //     { id: 1, name: "React.JS", image: "/re.svg" },
+  //     { id: 2, name: "TailwindCSS", image: "/tail.svg" },
+  //     { id: 3, name: "TypeScript", image: "/ts.svg" },
+  //     { id: 4, name: "Three.js", image: "/three.svg" },
+  //   ],
+  //   link: "https://github.com/adrianhajdin/ai_saas_app",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Animated Apple Iphone 3D Website",
+  //   description:
+  //     "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+  //   img: "/p4.svg",
+  //   iconList: [
+  //     { id: 1, name: "Next.JS", image: "/next.svg" },
+  //     { id: 2, name: "TailwindCSS", image: "/tail.svg" },
+  //     { id: 3, name: "TypeScript", image: "/ts.svg" },
+  //     { id: 4, name: "Three.js", image: "/three.svg" },
+  //     { id: 5, name: "GSAP", image: "/gsap.svg" },
+  //   ],
 
+  //   link: "https://github.com/adrianhajdin/iphone",
+  // },
+];
