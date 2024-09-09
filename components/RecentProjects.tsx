@@ -12,7 +12,7 @@ const RecentProjects = () => {
       <div className="py-20">
         <h1 className="heading">
           Uma mostra dos meus{" "}
-          <span className="text-purple">trabalhos recentes</span>
+          <span className="text-purple">projetos recentes</span>
         </h1>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-y-8 gap-x-24 p-4">
           {projects.map(({ id, title, description, img, iconList, link }) => (
@@ -68,7 +68,7 @@ const RecentProjects = () => {
                       target="_blank"
                     >
                       <div className="flex justify-center items-center">
-                        <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                        <p className="flex lg:text-xl md:text-xs text-sm text-purple hover:text-white transition-colors duration-500">
                           Ir para o Projeto
                         </p>
                         <FaLocationArrow className="ms-3" color="#CBACF9" />

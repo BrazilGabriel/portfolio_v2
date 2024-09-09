@@ -9,6 +9,7 @@ import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { CardSpotlight } from "./CardSpotlight";
 
 export const BentoGrid = ({
   className,
@@ -96,19 +97,17 @@ export const BentoGridItem = ({
           )}
         </div>
         {id === 6 && (
-          <BackgroundGradientAnimation>
-          </BackgroundGradientAnimation>
-        )}
+          <BackgroundGradientAnimation></BackgroundGradientAnimation> )}
         <div
           className={cn(
             titleClassName,
             "group/bento hover:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="z-10 font-sans text-sm font-extralight text-neutral-600 dark:text-[#c1c2d3] md:text-xs lg:text-base">
+          <div className="font-sans text-sm font-extralight text-neutral-600 dark:text-[#c1c2d3] md:text-xs lg:text-base">
             {description}
           </div>
-          <div className="z-10 max-w-96 font-sans text-lg font-bold lg:text-3xl">
+          <div className="max-w-96 font-sans text-lg font-bold lg:text-3xl">
             {title}
           </div>
 
@@ -141,25 +140,12 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="relative mt-5">
-              <div className={`absolute -bottom-5 right-0`}>
-                <Lottie
-                  options={{
-                    loop: copied,
-                    autoplay: copied,
-                    animationData,
-                    rendererSettings: {
-                      preserveAspectRatio: "xMidYmid slice",
-                    },
-                  }}
-                />
-              </div>
               <MagicButton 
               title={copied ? 'Email copiado!' : 'Copie meu email'}
               icon={<IoCopyOutline />}
               position="left"
               otherClasses="bg-[#161a31]"
               handleClick={handleCopy}
-
               />
             </div>
           )}

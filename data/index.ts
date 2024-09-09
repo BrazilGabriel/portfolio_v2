@@ -108,14 +108,17 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/BrazilGabriel",
   },
-  {
-    id: 2,
-    img: "/twit.svg",
-  },
+  // {
+  //   id: 2,
+  //   img: "/insta.svg",
+  //   link: "",
+  // },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/gabriel-silva-brasil-1104a2120/",
   },
 ];
 
@@ -150,24 +153,24 @@ export const projects = [
   },
   // {
   //   id: 3,
-  //   title: "AI Image SaaS - Canva Application",
+  //   title: "",
   //   description:
-  //     "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-  //   img: "/p3.svg",
+  //     "",
+  //   img: "",
   //   iconList: [
   //     { id: 1, name: "React.JS", image: "/re.svg" },
   //     { id: 2, name: "TailwindCSS", image: "/tail.svg" },
   //     { id: 3, name: "TypeScript", image: "/ts.svg" },
   //     { id: 4, name: "Three.js", image: "/three.svg" },
   //   ],
-  //   link: "https://github.com/adrianhajdin/ai_saas_app",
+  //   link: "",
   // },
   // {
   //   id: 4,
-  //   title: "Animated Apple Iphone 3D Website",
+  //   title: "",
   //   description:
-  //     "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-  //   img: "/p4.svg",
+  //     "",
+  //   img: "",
   //   iconList: [
   //     { id: 1, name: "Next.JS", image: "/next.svg" },
   //     { id: 2, name: "TailwindCSS", image: "/tail.svg" },
@@ -176,6 +179,70 @@ export const projects = [
   //     { id: 5, name: "GSAP", image: "/gsap.svg" },
   //   ],
 
-  //   link: "https://github.com/adrianhajdin/iphone",
+  //   link: "",
+  // },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et urna sagittis, convallis tortor ac, sagittis turpis. Phasellus lectus turpis, luctus eget aliquam eget, lobortis nec urna. Suspendisse potenti. Vestibulum",
+    name: "Zé Lourenço",
+    title: "Diretor da Alpha Technologias",
+  },
+  {
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et urna sagittis, convallis tortor ac, sagittis turpis. Phasellus lectus turpis, luctus eget aliquam eget, lobortis nec urna. Suspendisse potenti. Vestibulum",
+    name: "Zé Lourenço",
+    title: "Diretor da Alpha Technologias",
+  },
+  {
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et urna sagittis, convallis tortor ac, sagittis turpis. Phasellus lectus turpis, luctus eget aliquam eget, lobortis nec urna. Suspendisse potenti. Vestibulum",
+    name: "Zé Lourenço",
+    title: "Diretor da Alpha Technologias",
+  },
+  {
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et urna sagittis, convallis tortor ac, sagittis turpis. Phasellus lectus turpis, luctus eget aliquam eget, lobortis nec urna. Suspendisse potenti. Vestibulum",
+    name: "Zé Lourenço",
+    title: "Diretor da Alpha Technologias",
+  },
+  {
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et urna sagittis, convallis tortor ac, sagittis turpis. Phasellus lectus turpis, luctus eget aliquam eget, lobortis nec urna. Suspendisse potenti. Vestibulum",
+    name: "Zé Lourenço",
+    title: "Diretor da Alpha Technologias",
+  },
+];
+
+export const workExperience = [
+  {
+    id: 1,
+    title: "Web Designer",
+    desc: "Fui responsável por criar a identidade visual da empresa, site e eventos, além de desenvolver elementos de interface para um ambiente virtual de aprendizado e conceber o site institucional utilizando WordPress e React.",
+    className: "md:col-span-2",
+    thumbnail: "/xp_1.svg",
+  },
+  {
+    id: 2,
+    title: "UX/UI Designer",
+    desc: "Elaborei e executei projetos de PD&I (Samsung), sendo responsável pela criação de toda a interface de uma aplicação web e de um simulador em Realidade Virtual, participando ativamente desde a concepção, planejamento até o desenvolvimento de ambos.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/xp_2.svg",
+  },
+  {
+    id: 3,
+    title: "Dev Freelancer",
+    desc: "Desenvolvi páginas web para diversos clientes, com destaque o Ministério da Saúde, abrangendo desde o planejamento inicial até a implementação e disponibilização ao público.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/xp_3.svg",
+  },
+  // {
+  //   id: 4,
+  //   title: "Lead Frontend Developer",
+  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp4.svg",
   // },
 ];
