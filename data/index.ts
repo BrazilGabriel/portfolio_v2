@@ -9,8 +9,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title:
-      "Priorizo a colaboração do cliente, promovendo a comunicação aberta",
+    title: "Priorizo a colaboração do cliente, promovendo a comunicação aberta",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "size-full",
@@ -71,6 +70,36 @@ export const gridItems = [
   },
 ];
 
+export const stack = [
+  {
+    title: "React.js",
+    icon: "",
+  },
+  {
+    title: "Next.js",
+    icon: "",
+  },
+  {
+    title: "TypeScript",
+    icon: "",
+  },
+  {
+    title: "TailwindCSS",
+    icon: "",
+  },
+  {
+    title: "Vite",
+    icon: "",
+  },
+  {
+    title: "GSAP",
+    icon: "",
+  },
+  {
+    title: "Framer",
+    icon: "",
+  },
+];
 export const companies = [
   {
     id: 1,

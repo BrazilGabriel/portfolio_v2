@@ -8,17 +8,17 @@ import { AnimatedTooltip } from "./ui/animatedTooltip";
 
 const RecentProjects = () => {
   return (
-    <section id="projects">
-      <div className="py-20">
+    <section id="projects" className="py-20">
+      <div >
         <h1 className="heading">
-          Uma mostra dos meus{" "}
-          <span className="text-purple">projetos recentes</span>
+          Uma mostra dos meus
+          <span className="text-purple"> projetos recentes</span>
         </h1>
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-y-8 gap-x-24 p-4">
+        <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4 mt-12">
           {projects.map(({ id, title, description, img, iconList, link }) => (
             <div
               key={id}
-              className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+              className="flex h-[25rem] w-[80vw] items-center justify-center sm:h-[35rem] sm:w-[570px] lg:min-h-[32.5rem]"
             >
               <CardContainer className="relative flex items-center justify-center">
                 <CardBody className="hover:shadow-2xl size-full rounded-xl border  border-white/[0.2] bg-[#10132E] p-5 hover:shadow-indigo-500/[0.1] lg:rounded-3xl">
