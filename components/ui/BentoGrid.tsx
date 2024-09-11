@@ -4,12 +4,14 @@
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
-import Lottie from "react-lottie";
 import { useState } from "react";
-import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
-import { CardSpotlight } from "./CardSpotlight";
+import { TechIcon } from "./TechIcon";
+import { stack } from "@/data";
+import ToolboxItems from "./ToolboxItems";
+
+
 
 export const BentoGrid = ({
   className,
@@ -52,14 +54,12 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('gabriel.br1994@gmail.com');
+    navigator.clipboard.writeText("gabriel.br1994@gmail.com");
     setCopied(true);
     const timer = setTimeout(() => {
       setCopied(false);
     }, 5000);
-  }
-  
-
+  };
 
   return (
     <div
@@ -97,7 +97,8 @@ export const BentoGridItem = ({
           )}
         </div>
         {id === 6 && (
-          <BackgroundGradientAnimation></BackgroundGradientAnimation> )}
+          <BackgroundGradientAnimation></BackgroundGradientAnimation>
+        )}
         <div
           className={cn(
             titleClassName,
@@ -113,9 +114,9 @@ export const BentoGridItem = ({
 
           {id === 2 && <GlobeDemo />}
           {id === 3 && (
-            <div className="absolute -right-3 flex w-fit gap-1 lg:-right-2 lg:gap-5">
-              <div className="flex flex-col gap-3 lg:gap-8">
-                {["React.js", "Next.js", "Typescript"].map((item) => (
+            <div>
+
+                {/* {["React.js", "Next.js", "Typescript"].map((item) => (
                   <span
                     key={item}
                     className="rounded-lg bg-[#10132E] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
@@ -134,18 +135,19 @@ export const BentoGridItem = ({
                   >
                     {item}
                   </span>
-                ))}
-              </div>
+                ))} */}
+              <ToolboxItems items={stack} className="mt-6" itemsWrapperClassName="animate-move-left [animation-duration:30s]"/>
+              <ToolboxItems items={stack} className="mt-6" itemsWrapperClassName="animate-move-right [animation-duration:15s]"/>
             </div>
           )}
           {id === 6 && (
             <div className="relative mt-5">
-              <MagicButton 
-              title={copied ? 'Email copiado!' : 'Copie meu email'}
-              icon={<IoCopyOutline />}
-              position="left"
-              otherClasses="bg-[#161a31]"
-              handleClick={handleCopy}
+              <MagicButton
+                title={copied ? "Email copiado!" : "Copie meu email"}
+                icon={<IoCopyOutline />}
+                position="left"
+                otherClasses="bg-[#161a31]"
+                handleClick={handleCopy}
               />
             </div>
           )}

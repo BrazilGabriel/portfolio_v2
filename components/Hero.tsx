@@ -42,7 +42,7 @@ const Hero = () => {
               words="Transformando ideias em interfaces incríveis"
             />
             <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-              Olá, eu sou Gabriel Brasil.
+              Olá, eu sou Gabriel Brasil. <br />
               Seja bem-vindo ao meu portfólio! 
             </p>
             <a href="#about">

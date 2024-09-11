@@ -1,3 +1,6 @@
+export {default as NextIcon } from '@/public/next.svg'
+
+
 export const navItems = [
   { name: "Início", link: "#hero" },
   { name: "Sobre", link: "#about" },
@@ -70,68 +73,6 @@ export const gridItems = [
   },
 ];
 
-export const stack = [
-  {
-    title: "React.js",
-    icon: "",
-  },
-  {
-    title: "Next.js",
-    icon: "",
-  },
-  {
-    title: "TypeScript",
-    icon: "",
-  },
-  {
-    title: "TailwindCSS",
-    icon: "",
-  },
-  {
-    title: "Vite",
-    icon: "",
-  },
-  {
-    title: "GSAP",
-    icon: "",
-  },
-  {
-    title: "Framer",
-    icon: "",
-  },
-];
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
 
 export const socialMedia = [
   {
@@ -274,4 +215,35 @@ export const workExperience = [
   //   className: "md:col-span-2",
   //   thumbnail: "/exp4.svg",
   // },
+];
+
+export const stack = [
+  {
+    title: "React.js",
+    src: "/re.svg",
+  },
+  {
+    title: "Next.js",
+    src: "/next.svg",
+  },
+  {
+    title: "TypeScript",
+    src: "/ts.svg",
+  },
+  {
+    title: "TailwindCSS",
+    src: "/tail.svg",
+  },
+  {
+    title: "Vite",
+    src: "/vite_logo.svg",
+  },
+  {
+    title: "GSAP",
+    src: "/gsap.svg",
+  },
+  {
+    title: "Framer",
+    src: "/fm.svg",
+  },
 ];
