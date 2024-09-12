@@ -12,7 +12,7 @@ const RecentProjects = () => {
       <div >
         <h1 className="heading">
           Uma mostra dos meus
-          <span className="text-purple"> projetos recentes</span>
+          <span className="text-neongreen"> projetos recentes</span>
         </h1>
         <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4 mt-12">
           {projects.map(({ id, title, description, img, iconList, link }) => (
@@ -21,7 +21,7 @@ const RecentProjects = () => {
               className="flex h-[25rem] w-[80vw] items-center justify-center sm:h-[35rem] sm:w-[570px] lg:min-h-[32.5rem]"
             >
               <CardContainer className="relative flex items-center justify-center">
-                <CardBody className="hover:shadow-2xl size-full rounded-xl border  border-white/[0.2] bg-[#10132E] p-5 hover:shadow-indigo-500/[0.1] lg:rounded-3xl">
+                <CardBody className="hover:shadow-2xl size-full rounded-xl border  border-white/[0.2] bg-[#10132E] p-5 hover:shadow-neongreen-hover/[0.2] lg:rounded-3xl">
                   <CardItem
                     translateZ="100"
                     className="sm:w-[570px] w-[80vw] sm:h-[20rem] h-[10rem] mb-10 relative"
@@ -68,10 +68,10 @@ const RecentProjects = () => {
                       target="_blank"
                     >
                       <div className="flex justify-center items-center">
-                        <p className="flex lg:text-xl md:text-xs text-sm text-purple hover:text-white transition-colors duration-500">
+                        <p className="flex lg:text-xl md:text-xs text-sm text-white hover:text-neongreen-hover transition-colors duration-500">
                           Ir para o Projeto
                         </p>
-                        <FaLocationArrow className="ms-3" color="#CBACF9" />
+                        <FaLocationArrow className="ms-3" color="#00ff99" />
                       </div>
                     </CardItem>
                   </div>

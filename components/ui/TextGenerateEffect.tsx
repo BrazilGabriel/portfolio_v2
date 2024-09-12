@@ -38,7 +38,7 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               // eslint-disable-next-line tailwindcss/no-custom-classname
-              className={`${idx>2 ? "text-purple" : "text-black dark:text-white"} opacity-0 `}
+              className={`${idx>1 ? "text-neongreen" : "text-black dark:text-white"} opacity-0 `}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}

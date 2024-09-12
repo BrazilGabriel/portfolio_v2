@@ -26,8 +26,18 @@ const config = {
         "2xl": "1400px",
       },
     },
+
+    fontFamily: {
+      primary: 'var(--font-jetbrainsMono)'
+    },
     extend: {
       colors: {
+
+        neongreen:{
+          DEFAULT: "#00FF99", 
+          hover: "#00E187",
+        },
+      
         black: {
           DEFAULT: "#000",
           100: "#000319",

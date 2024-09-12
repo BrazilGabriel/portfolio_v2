@@ -32,7 +32,7 @@ const ToolboxItems = ({
             {items.map((item) => (
               <div
                 key={item.title}
-                className="inline-flex items-center gap-4 rounded-lg px-3 py-2 outline outline-2 outline-white/10 opacity-60 hover:opacity-100"
+                className="inline-flex items-center gap-4 rounded-lg px-3 py-2 opacity-60 outline outline-2 outline-white/10 hover:opacity-100 hover:outline-neongreen/50 cursor-default"
               >
                 <TechIcon component={item.src} />
                 <span>{item.title}</span>

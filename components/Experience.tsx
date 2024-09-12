@@ -7,7 +7,7 @@ function Experience() {
     <div className="py-20">
       <h1 className="heading">
         Minhas
-        <span className="text-purple"> experiências anteriores</span>
+        <span className="text-neongreen"> experiências anteriores</span>
       </h1>
       <div className="mt-12 grid w-full grid-cols-1 gap-10 lg:grid-cols-4">
         {workExperience.map((card) => (
